@@ -236,3 +236,50 @@ h3 {
     background-color: #f0f0f0;
     border-radius: 5px;
 }
+
+/* General font and alignment for quote */
+.quote-container {
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #eff306, #f9fd0d);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: orangered;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    animation: glow 3s infinite alternate;
+}
+
+/* Font styles for the quote */
+.quote {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 400;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Author's name styling */
+.author {
+    font-size: 1rem;
+    font-weight: 600;
+    display: block;
+    margin-top: 10px;
+    color: #f4f4f4;
+}
+
+/* Glow animation */
+@keyframes glow {
+    from {
+        box-shadow: 0 0 15px #f13506, 0 0 30px #f03304;
+    }
+    to {
+        box-shadow: 0 0 20px #f32804, 0 0 40px #f32905;
+    }
+}
+
+/* Hover effects */
+.quote-container:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
